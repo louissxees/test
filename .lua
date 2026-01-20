@@ -1,5 +1,5 @@
 
-if not UserKey then error("❌ Define UserKey first!") end
+if not UserKey then error("Define UserKey first!") end
 
 local player = game.Players.LocalPlayer
 local currentUser = player.Name:lower()
@@ -44,7 +44,7 @@ local function ValidateKey(key)
         end
     end
     
-    return false, "Key hanya untuk: " .. table.concat(keyData.users, ", ")
+    return false
 end
 
 -- Main
