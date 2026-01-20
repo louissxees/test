@@ -6,17 +6,17 @@ local currentUser = player.Name:lower()
 
 -- Key Database (bisa dipindah ke external file nanti)
 local KeyDB = {
-    ["LS_123456"] = {
+    ["Admin_7tcr637n2t87ctg5y798t2547ty"] = {
         users = {"Louissxe", "admin123"},
         expiry = os.time() + 2592000, -- 30 hari
         tier = "premium"
     },
-    ["TRIAL_789012"] = {
+    ["Test_78tn3c7tr43427trvnt2875342"] = {
         users = "*", -- Semua user bisa
         expiry = os.time() + 86400, -- 1 hari
         tier = "trial"
     },
-    ["VIP_345678"] = {
+    ["LS_7n9ty7tcr24rcrcrcrt23r4693r976"] = {
         users = {"vipuser1", "vipuser2", "vipuser3"},
         expiry = os.time() + 604800, -- 7 hari
         tier = "vip"
