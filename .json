@@ -1,6 +1,26 @@
 {
-  "Example_74frgh287rfgh9732983r": {"valid": true, "tier": "premium"},
-  "Test_3287n0frd3c27ny87o23nc87": {"valid": true, "tier": "trial"},
-  "Demo_83xc278cbt723vcrt78474t8": {"valid": false, "tier": "expired"},
-  "Admin_8743fegh472frgu729428743": {"valid": true, "tier": "premium"}
+  "LS_123456": {
+    "users": ["Louissxe", "AdminUser"],
+    "expiry": 1893456000,
+    "tier": "premium",
+    "active": true
+  },
+  "VIP_789012": {
+    "users": ["PremiumUser", "GamerGirl123"],
+    "expiry": 1896124800,
+    "tier": "vip",
+    "active": true
+  },
+  "TRIAL_345678": {
+    "users": "*",
+    "expiry": 1893542400,
+    "tier": "trial",
+    "active": true
+  },
+  "FAM_901234": {
+    "users": ["FamilyUser1", "FamilyUser2", "FamilyUser3"],
+    "expiry": 1893628800,
+    "tier": "family",
+    "active": true
+  }
 }
