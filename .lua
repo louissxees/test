@@ -59,30 +59,8 @@ if isValid then
     task.spawn(function()
         task.wait(2)
         if WindUI then
-            WindUI:Notify({
-                Title = "LS Hub - " .. tierOrError,
-                Content = "Welcome " .. player.Name .. "!",
-                Duration = 3
-            })
         end
     end)
-    
 else
-    -- Error message
-    warn("" .. tierOrError)
-    
-    -- Simple error UI
-    local sg = Instance.new("ScreenGui")
-    local lbl = Instance.new("TextLabel")
-    
-    sg.Parent = player:WaitForChild("PlayerGui")
-    
-    lbl.Size = UDim2.new(1, 0, 1, 0)
-    lbl.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-    lbl.Text = "KEY ERROR\n\nUsername: " .. player.Name .. "\n\n" .. tierOrError .. "\n\nGet key: discord.gg/s9v49dwV"
-    lbl.TextColor3 = Color3.fromRGB(255, 100, 100)
-    lbl.Font = Enum.Font.GothamBold
-    lbl.TextSize = 18
-    lbl.TextWrapped = true
-    lbl.Parent = sg
+    error("" .. tierOrError)
 end
